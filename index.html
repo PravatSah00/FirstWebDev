@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid sticky p-0" id="nav-container">
+        <div class="row m-0 my-2 mx-auto justify-content-between" id="wrapper">
+            <!-- Brand Image -->
+            <img class="d-inline-block" src="Images/logo-central-coffee.png" alt="Logo" style="width:180px; height:80px;">
+            <!-- HTML for drop down navigation bar -->
+            <div class="align-self-center d-flex d-sm-none" style="width:80px;" onclick="displayNavbar()">
+                <i class="fa-solid fa-bars text-white" style="font-size:40px;"></i>
+                <div class="nav flex-column" id="nav-small">
+                    <div class="nav-item"><a href="#" class="nav-link text-white rounded">About</a></div>
+                    <div class="nav-item"><a href="#" class="nav-link text-white rounded">Menu</a></div>
+                    <div class="nav-item"><a href="#" class="nav-link text-white rounded">Location</a></div>
+                </div>
+            </div>
+            <!-- HTML for normal navigation bar -->
+            <div class="nav align-self-center d-none d-sm-flex" id="nav-big">
+                <div class="nav-item"><a href="#" class="nav-link text-white rounded">About</a></div>
+                <div class="nav-item"><a href="#" class="nav-link text-white rounded">Menu</a></div>
+                <div class="nav-item"><a href="#" class="nav-link text-white rounded">Location</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="header">
+        <div class="row h-100">
+            <div class="col-12 align-self-center">
+                <h1 class="text-white text-center">Central coffee</h1>
+                <h2 class="text-white text-center text-bold">Bespoke organically-sourced coffee</h2>
+            </div>
+        </div>
+    </div>
+    <div id="about" style="border:1px solid transparent">
+        <div class="container-md my-5" style="border:1px solid transparent;">
+            <div class="row mx-md-5 mx-1 mt-5">
+                <h1 class="mb-4 fw-bold">About</h1>
+                <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis sagittis urna, a fermentum mauris. Mauris sagittis eu urna at sollicitudin. Sed et dui accumsan, vulputate dui ut, fringilla tellus. Vivamus a ex commodo, vulputate metus gravida, congue arcu. Fusce vehicula laoreet lorem vel lacinia. Etiam ac erat turpis. Morbi nec urna aliquet, placerat nisl ac, venenatis justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="row mx-md-5 mx-1 my-5 justify-content-between">
+                <div class="col-lg-3 col-md-6 py-2" style="min-height:200px;">
+                    <img class="w-100 h-100" src="Images/Coffee spoon.jpg" alt="">
+                </div>
+                <div class="col-lg-3 col-md-6 py-2" style="min-height:200px;">
+                    <img class="w-100 h-100" src="Images/girl phone.jpg" alt="">
+                </div>
+                <div class="col-lg-3 col-md-6 py-2" style="min-height:200px;">
+                    <img class="w-100 h-100" src="Images/coffee pen.png" alt="">
+                </div>
+                <div class="col-lg-3 col-md-6 py-2" style="min-height:200px;">
+                    <img class="w-100 h-100" src="Images/black coffee spoon.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="menu" style="border:1px solid transparent">
+        <div class="container-md my-5" style="border:1px solid transparent;">
+            <div class="row mx-md-5 mx-1 mt-5">
+                <h1 class="mb-4 fw-bold text-light">Menu</h1>
+                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis sagittis urna, a fermentum mauris. Mauris sagittis eu urna at sollicitudin. Sed et dui accumsan, vulputate dui ut, fringilla tellus. Vivamus a ex commodo, vulputate metus gravida, congue arcu. Fusce vehicula laoreet lorem vel lacinia. Etiam ac erat turpis. Morbi nec urna aliquet, placerat nisl ac, venenatis justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="row mx-md-5 mx-1 my-5 justify-content-between">
+                <div class="col-md-6 py-2 pe-3">
+                    <h4 class="mb-4 fw-bold text-light text-center">DRINKS</h4>
+                    <img src="Images/Drinks.jpg" alt="" style="width:100%; height:330px;">
+                    <p class="text-white text-center mt-4">La Catalina (Colombia)</p>
+                    <p class="text-white text-center">Guarumales (Ecuador)</p>
+                    <p class="text-white text-center">Rukondo (Rwanda)</p>
+                    <p class="text-white text-center">Peppermint Tea</p>
+                    <p class="text-white text-center mb-5">Black tea</p>
+                </div>
+                <div class="col-md-6 py-2">
+                    <h4 class="mb-4 fw-bold text-light text-center">FOOD</h4>
+                    <img src="Images/Food.png" alt="" style="width:100%; height:330px;">
+                    <p class="text-white text-center mt-4">Frittata (Herb and Veggie, Italian, Corned Beef)</p>
+                    <p class="text-white text-center">Breakfast sandwich</p>
+                    <p class="text-white text-center">Cobb salad</p>
+                    <p class="text-white text-center mb-5">Various baked goods</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="location" style="border:1px solid transparent;">
+        <div class="container-md my-5" style="border:1px solid transparent;">
+            <div class="row mx-md-5 mx-1 mt-5">
+                <h1 class="mb-4 fw-bold">Location</h1>
+            </div>
+            <div class="row mx-md-5 mx-1 my-5">
+                <div class="col-md-6 my-3">
+                    <img src="Images/map.png" alt="" class="w-100">
+                </div>
+                <div class="col-md-6 my-3">
+                    <h3 class="mb-4">HOURS</h3>
+                    <p>Mon-Thurs -- 7am - 8pm</p>
+                    <p>Fri-Sun -- 8am - 10pm</p>
+                </div>
+            </div>
+        </div>
+        <p class="text-center pt-3 pb-1">© 2018 Central Coffee</p>
+    </div>
+
+    <script src="https://kit.fontawesome.com/56a678f80d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

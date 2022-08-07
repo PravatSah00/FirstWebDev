@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Lato&display=swap');
+#nav-container{
+    background-color: #36384C;
+    border:1px solid transparent;
+    position:sticky;
+    top:0;
+    box-shadow:0px 3px 5px #11111156;
+}
+#wrapper{
+    width:min(1100px,100%);
+}
+#nav-small{
+    background-color: #36384C;
+    display: none;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    font-size:2em;
+}
+#nav-big{
+    width:300px;
+    font-size: 1.3em;
+}
+.nav-link{
+    transition: all 0.3s;
+}
+.nav-link:hover{
+    background-color:#849971;
+}
+
+#header{
+    background-image: url("Images/coffee-head.jpg");
+    background-size:cover;
+    background-position: center center;
+    height:600px;
+}
+#header h1{
+    font-family: 'Bitter', serif;
+    font-size:120px;
+}
+#header h2{
+    font-family: 'Lato', sans-serif;
+    font-size:30px;
+}
+
+#about{
+    background-color: #E9DCCD;
+}
+#about h1, #menu h1, #location .row:first-of-type h1{
+    font-size:34px;
+    font-family: 'Bitter', serif;
+}
+#about p, #menu p{
+    text-align: justify;
+    font-size:18px;
+    font-family: 'Lato', sans-serif;
+}
+
+#menu{
+    background-color: #36384C;
+}
+#menu .row:last-of-type{
+    font-family: 'Lato', sans-serif;
+    font-size:17px;
+}
+
+#location{
+    background-color: #E9DCCD;
+}
+
+@media  screen and (max-width:800px) {
+    #header{
+        height: 230px;
+    }
+    #header h1{
+        font-size:45px;
+    }
+}
